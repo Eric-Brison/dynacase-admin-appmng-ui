@@ -28,7 +28,6 @@ function action_edit(Action & $action)
         $action->lay->Set("long_name", "");
         $action->lay->Set("acl", "");
         $action->lay->Set("root", "");
-        $action->lay->Set("toc", "");
         $action->lay->Set("id", "");
         $action->lay->Set("TITRE", _("titlecreateaction"));
         $action->lay->Set("BUTTONTYPE", _("butcreate"));
@@ -42,7 +41,6 @@ function action_edit(Action & $action)
         $action->lay->Set("long_name", $action->text($ActionCour->long_name));
         $action->lay->Set("acl", $ActionCour->acl);
         $action->lay->Set("root", $ActionCour->root);
-        $action->lay->Set("toc", $ActionCour->toc);
         $action->lay->Set("TITRE", _("titlemodifyaction"));
         $action->lay->Set("BUTTONTYPE", _("butmodify"));
         $action->lay->set("openaccess", $ActionCour->openaccess);
